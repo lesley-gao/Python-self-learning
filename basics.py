@@ -61,20 +61,23 @@ print(message)   # KIWI Company, founded in: 2024, today's stock price is: 19.99
 # Or, use the f"{}" method
 print(f"{name}, founded in: {setup_year}, today's stock price is: {stock_price} ")
 
-num1 = 11
-num2 = 11.345
-print("数字11宽度限制5，结果是: %5d" % num1)
-# 输出为：数字11宽度限制5，结果是: 11
-# 整数 num1 的宽度被限制为 5，因此在数字前补了 3 个空格。
 
-print("数字11宽度限制1，结果是: %1d" % num1)
-# 输出为：数字11宽度限制1，结果是: 11
-# 宽度设置为 1，但由于数字自身占 2 位，因此宽度限制无效。
+# String Formatting examples
+company_name = "Kiwi Travel"
+current_stock_price = 19.99
+stock_code = "003032"
+stock_price_daily_growth_factor = 1.2
+growth_days = 7
+print(f"Company name: {company_name}, Stock code: {stock_code}, Current stock price: {current_stock_price}")
+print("Stock price daily growth: %.1f, after %d days of growth, its stock price will reach %.2f" % (stock_price_daily_growth_factor, growth_days, current_stock_price * stock_price_daily_growth_factor ** growth_days))
+# Company name: Kiwi Travel, Stock code: 003032, Current stock price: 19.99
+# Stock price daily growth: 1.2, after 7 days of growth, its stock price will reach 71.63
 
-print("数字11.345宽度限制7，小数精度2，结果是: %7.2f" % num2)
-# 输出为：数字11.345宽度限制7，小数精度2，结果是: 11.35
-# 浮点数 num2 的总宽度限制为 7，小数精度为 2，结果在小数点后保留 2 位，并前面补 2 个空格以达到总宽度 7。
 
-print("数字11.345不限制，小数精度2，结果是: %.2f" % num2)
-# 输出为：数字11.345宽度限制7，小数精度2，结果是: 11.35
-# 浮点数 num2 的总宽度限制为 7，小数精度为 2，结果在小数点后保留 2 位，并前面补 2 个空格以达到总宽度 7。
+# input() example
+print("Please enter your name")
+name = input()
+print("The name you entered is %s" % name)
+# equals to below
+name = input("Please enter your name")
+print("The name you entered is %s" % name)
