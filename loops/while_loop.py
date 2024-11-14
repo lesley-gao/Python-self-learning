@@ -71,3 +71,4 @@ while i <=9:
 
     i += 1
     print() #adds a newline after each row so that the next row starts on a new line.
+

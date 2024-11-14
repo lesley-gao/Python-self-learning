@@ -39,3 +39,13 @@ for i in range(1, 101):
         j += 1
 
     i += 1
+
+
+"""
+Example 4: Use a nested for loop
+Create a multiplication table up to 9*9 
+"""
+for i in range(1, 10):
+    for j in range(1, i + 1):
+        print(f"{j}*{i}={j * i}\t", end='')
+    print()
