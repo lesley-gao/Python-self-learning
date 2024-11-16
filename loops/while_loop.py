@@ -1,7 +1,9 @@
-""" While Loop Examples """
+"""
+While Loop Examples
+"""
 
 """
-Example 1: 
+Practice 1: 
 Say "I love you" for 100 times"""
 # i = 0
 # while i < 100:
@@ -10,7 +12,7 @@ Say "I love you" for 100 times"""
 
 
 """
-Example 2: 
+Practice 2: 
 Calculate the sum of all numbers from 1 to 100"""
 # i = 1
 # sum_number = 0
@@ -21,7 +23,7 @@ Calculate the sum of all numbers from 1 to 100"""
 
 
 """
-Example 3: 
+Practice 3: 
 Set a random integer variable within the range of 1-100.
 Use a while loop, along with the input statement, to check if the entered number is equal to the random number.
 - Provide unlimited attempts until the correct number is guessed.
@@ -43,7 +45,7 @@ print(f"You got the right numbers after {guess_count} guesses.")
 
 
 """
-Example 4: Use a nested while loop
+Practice 4: Use a nested while loop
 100 days of confession, 10 roses for each day.
 That is, each day has a "confession" along with 10 roses, for a total of 100 days.
 """
@@ -58,7 +60,7 @@ while day <= 100:
 
 
 """
-Example 5: Use a nested while loop
+Practice 5: Use a nested while loop
 Create a multiplication table up to 9*9 
 """
 i = 1
