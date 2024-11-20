@@ -1,5 +1,5 @@
 """
-These functions will be used in package.py
+These functions will be used in 08_package - package.py
 """
 
 
