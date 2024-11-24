@@ -1,3 +1,4 @@
+# Example 1
 class Student:
     name = None
     nationality = None
@@ -18,6 +19,8 @@ stu_1.city = "Auckland"
 stu_1.sayhi()
 stu_1.say_hi2("nice to meet you")
 
+
+# Example 2
 class Clock:
     id = None
     price = None
