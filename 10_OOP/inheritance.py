@@ -16,24 +16,35 @@ object.func2()
 
 # Multiple Inheritance
 # Base class1
-class Mother:
-    mothername = ""
+class Phone:
+    IMEI = None
+    producer = "IT DEPT"
 
-    def mother(self):
-        print(self.mothername)
-# Base class2
-class Father:
-    fathername = ""
+    def call_by_4g(self):
+        print("4g call is on")
 
-    def father(self):
-        print(self.fathername)
-# Derived class
-class Son(Mother, Father):
-    def parents(self):
-        print("Father:", self.fathername)
-        print("Father:", self.mothername)
+class NFCReader:
+    nfc_type = "5th generation"
+    producer = "HM"
 
-s1 = Son()
-s1.fathername = "Tom"
-s1.mothername = "Olivia"
-s1.parents()
+    def read_card(self):
+        print("NFC reading card")
+
+    def write_card(self):
+        print("NFC writing card")
+
+class RemoteControl:
+    rc_type = "Infrared Remote Control "
+
+    def control(self):
+        print("Infrared Remote Control is on")
+
+class Phone2024(Phone, NFCReader, RemoteControl):
+    pass  # "pass" is to tell Python, “I'm not adding any code here for now, but this class must exist and remain legal
+
+phone = Phone2024()
+print("The producer is: " + phone.producer)
+phone.call_by_4g()
+phone.read_card()
+phone.read_card()
+phone.control()
