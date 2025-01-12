@@ -7,15 +7,15 @@ class Student:
     def __str__(self):
         return f"Info of this student: name:{self.name}, age:{self.age}"
 
-    # __lt__ magic method
+    # __lt__ magic method (less than)
     def __lt__(self, other):
         return self.age < other.age   # check whether current student is younger than the other student
 
-    # __le__ magic method
+    # __le__ magic method (less than or equal to)
     def __le__(self, other):
         return self.age <= other.age
 
-    # __eq__ magic method
+    # __eq__ magic method (equal to)
     def __eq__(self, other):
         return self.age == other.age
 
